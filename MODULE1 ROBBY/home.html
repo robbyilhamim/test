@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color: lightblue;">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">
+          <img src="logo-ead.png" alt="logo" style="width:100px;">
+        </a>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html">Profie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">Product</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="container" style="margin-top: 3%;">
+        <div class="row">
+            <div class="col-md-6" style="background-color: lightgray;">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AwMeQJ_u73I" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" style="background-color: lightcyan;">
+                <div class="container px-5 py-5">
+                    <form action="">
+                        <center>
+                            <h3 style="margin-bottom: 25px;">Customers Data Registration</h3>
+                        </center>
+                        <div class="form-group row">
+                            <label for="inputname" class="col-sm-4 col-form-label">Name</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" id="inputname" name="inputname" value="" placeholder="Insert Your Name">
+                            </div>
+                            <div class="col-sm-1"></div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputphone" class="col-sm-4 col-form-label">Phone</label>
+                            <div class="col-sm-8">
+                              <input type="number" class="form-control" id="inputphone" name="inputphone" value="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputaddress" class="col-sm-4 col-form-label">Address</label>
+                            <div class="col-sm-8">
+                                <textarea class="form-control" id="inputaddress" name="inputaddress" value="" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputpayment" class="col-sm-4 col-form-label">Payment</label>
+                            <div class="form-check form-check-inline ml-3">
+                                <input class="form-check-input" type="radio" name="inputpayment" id="inputpayment1" value="cash">
+                                <label class="form-check-label" for="inputpayment1">Cash</label>
+                            </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inputpayment" id="inputpayment2" value="credit">
+                                <label class="form-check-label" for="inputpayment2">Credit</label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputorder" class="col-sm-4 col-form-label">Order Category</label>
+                            <div class="col-sm-8">
+                                <select class="form-control" id="inputorder" name="inputorder" value="">
+                                    <option>Computer</option>
+                                    <option>Keyboard</option>
+                                    <option>Mouse</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="container-fluid btn btn-primary mt-2">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </div>
+</body>
+
+</html>
